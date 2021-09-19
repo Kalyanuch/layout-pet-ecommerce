@@ -161,5 +161,74 @@ body {
 .header__bottom {
     margin-bottom: 78px;
 }
-
 /*********************************** Header ***********************************/
+
+/*********************************** Promo section ***********************************/
+.promo__inner {
+    display: flex;
+    justify-content: space-between;
+    /*align-items: center;*/
+}
+
+.promo__slider {
+    max-width: 870px;
+    position: relative;
+}
+
+.promo__slider_btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn__prev {
+    left: 15px;
+}
+
+.btn__next {
+    right: 15px;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 35px;
+}
+
+.slick-dots li {
+    padding: 0 5px;
+}
+
+.slick-dots button {
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    width: 11px;
+    height: 11px;
+    border: solid 1px #FFF;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #FFF;
+}
+
+.promo__product {
+    max-width: 265px;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+}
+/*********************************** Promo section ***********************************/
