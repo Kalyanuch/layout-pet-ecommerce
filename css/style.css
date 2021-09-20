@@ -21,6 +21,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+p {
+    margin: 0;
+}
+
 body {
     color: #2F3035;
 /*
@@ -230,5 +234,89 @@ body {
     height: 100%;
     display: inline-block;
     text-align: center;
+    border: 1px solid #CDCDCD;
+    border-radius: 3px;
+}
+
+.promo__item_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.promo__item_badge {
+    color: #FFF;
+    text-transform: uppercase;
+    background-color: #1C62CD;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    padding: 8px 20px;
+}
+
+.promo__item_price {
+    font-family: 'Barlow', sans-serif;
+    text-align: right;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 32px;
+    margin-right: 6px;
+    padding-right: 20px;
+    position: relative;
+}
+
+.promo__item_price .price {
+    color: #1C62CD;
+}
+
+.promo__item_price .price::after {
+    content: '';
+    background-image: url("../images/currency/rub_blue.svg");
+    position: absolute;
+    right: 0;
+    width: 15px;
+    height: 18px;
+    /*top: 55%;
+    transform: translateY(-50%);*/
+    top: 8px;
+}
+
+.price_old {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #C4C4C4;
+    margin-top: 10px;
+    margin-right: 15px;
+    position: relative;
+    background-image: url("../images/old_price.svg");
+    display: inline;
+    padding: 1px 5px;
+}
+/*
+.price_old::before {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: #C4C4C4;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: rotate(-5.33deg);
+}
+*/
+.price_old::after {
+    content: '';
+    background-image: url("../images/currency/rub_grey.svg");
+    width: 8px;
+    height: 10px;
+    position: absolute;
+    right: -10px;
+    top: 5px;
 }
 /*********************************** Promo section ***********************************/
