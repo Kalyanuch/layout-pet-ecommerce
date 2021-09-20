@@ -168,10 +168,14 @@ body {
 /*********************************** Header ***********************************/
 
 /*********************************** Promo section ***********************************/
+.promo {
+    margin-bottom: 75px;
+}
+
 .promo__inner {
     display: flex;
     justify-content: space-between;
-    /*align-items: center;*/
+    align-items: initial;
 }
 
 .promo__slider {
@@ -231,11 +235,12 @@ body {
 
 .promo__product {
     max-width: 265px;
-    height: 100%;
-    display: inline-block;
     text-align: center;
     border: 1px solid #CDCDCD;
     border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .promo__item_top {
@@ -272,15 +277,13 @@ body {
     color: #1C62CD;
 }
 
-.promo__item_price .price::after {
+.promo__item_price .price_rub::after {
     content: '';
     background-image: url("../images/currency/rub_blue.svg");
     position: absolute;
     right: 0;
     width: 15px;
     height: 18px;
-    /*top: 55%;
-    transform: translateY(-50%);*/
     top: 8px;
 }
 
@@ -296,21 +299,8 @@ body {
     display: inline;
     padding: 1px 5px;
 }
-/*
-.price_old::before {
-    content: '';
-    display: inline-block;
-    width: 100%;
-    height: 1px;
-    background-color: #C4C4C4;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 50%;
-    transform: rotate(-5.33deg);
-}
-*/
-.price_old::after {
+
+.price_old.price_rub::after {
     content: '';
     background-image: url("../images/currency/rub_grey.svg");
     width: 8px;
@@ -318,5 +308,36 @@ body {
     position: absolute;
     right: -10px;
     top: 5px;
+}
+
+.promo__item_title {
+    color: #2F3035;
+    margin-bottom: 7px;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: bold;
+}
+
+.promo__img {
+    max-width: 50%;
+    height: auto;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.promo__item_footer {
+    background-color: #F0F0F4;
+    padding: 25px 20px;
+    color: #2F3035;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.promo__item_footer span {
+    color: #1C62CD;
+    font-family: Barlow;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
 }
 /*********************************** Promo section ***********************************/
