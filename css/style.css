@@ -9,6 +9,7 @@ html {
 a {
     text-decoration: none;
     color: inherit;
+    display: inline-block;
 }
 
 ul, li {
@@ -43,6 +44,9 @@ body {
     margin: 0 auto;
 }
 
+.page__section {
+    margin-bottom: 80px;
+}
 
 /*********************************** Header ***********************************/
 .header__top_inner {
@@ -161,15 +165,11 @@ body {
     right: auto;
     left: 0;
 }
-
-.header__bottom {
-    margin-bottom: 78px;
-}
 /*********************************** Header ***********************************/
 
 /*********************************** Promo section ***********************************/
-.promo {
-    margin-bottom: 75px;
+.promo__product {
+    transition: all .3s ease;
 }
 
 .promo__inner {
@@ -192,6 +192,11 @@ body {
     border: none;
     cursor: pointer;
     outline: none;
+    opacity: .5;
+}
+
+.promo__slider_btn:hover {
+    opacity: 1;
 }
 
 .btn__prev {
@@ -340,4 +345,82 @@ body {
     display: block;
     margin-top: 5px;
 }
+
+.promo__product:hover {
+    box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+}
 /*********************************** Promo section ***********************************/
+
+/*********************************** Search section ***********************************/
+.tabs__panel {
+    margin-bottom: 25px;
+}
+
+.search__tabs_item {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2F3035;
+    padding: 11px 25px;
+}
+
+.search__tabs_item.active {
+    font-weight: bold;
+    background-color: #F0F0F4;
+    border-radius: 5px;
+}
+
+.tabs__data_item {
+    display: none;
+}
+
+.search__content_form {
+    height: 50px;
+    display: flex;
+    justify-content: normal;
+    align-items: center;
+}
+
+.search__content_input {
+    display: inline-block;
+    margin: 0;
+    width: calc(100% - 150px);
+    height: 100%;
+    background: #F0F0F4;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.search__content_input::placeholder {
+    color: #656464;
+}
+
+.search__content_btn {
+    width: 153px;
+    background: #1C62CD;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: inline-block;
+    height: 100%;
+    cursor: pointer;
+    border: none;
+    margin: 0 0 0 -3px;
+    transition: all .3s ease;
+}
+
+.search__content_btn:hover {
+    color: #1C62CD;
+    background-color: #F0F0F4;
+}
+/*********************************** Search section ***********************************/

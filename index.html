@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="header">
+  <header class="header page__section">
     <div class="header__top">
       <div class="container">
         <div class="header__top_inner">
@@ -71,7 +71,7 @@
       </div>
     </div>
   </header>
-  <section class="promo">
+  <section class="promo page__section">
     <div class="container">
       <div class="promo__inner">
         <div class="promo__slider">
@@ -94,8 +94,7 @@
             <img src="content/slide.jpg" alt="image" class="promo__slider_image" />
           </a>
         </div>
-        <a class="promo__product">
-
+        <a href="#" class="promo__product">
           <div class="promo__item_top">
             <p class="promo__item_badge">акция</p>
             <div class="promo__item_price">
@@ -111,6 +110,37 @@
             Акция действует до<span>31.08.2020</span>
           </div>
         </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="search page__section">
+    <div class="container">
+      <div class="search__inner">
+        <div class="tabs__panel">
+          <a href="#tab_1" class="tabs__panel_item search__tabs_item">Поиск по номеру</a>
+          <a href="#tab_2" class="tabs__panel_item search__tabs_item">Поиск по марке</a>
+          <a href="#tab_3" class="tabs__panel_item search__tabs_item">Поиск по названию товара</a>
+        </div>
+        <div class="tabs__data">
+          <div class="tabs__data_item" id="tab_1">
+            <form class="search__content_form">
+              <input type="text" class="search__content_input" value="" placeholder="Введите номер"><button type="button" class="search__content_btn">искать</button>
+            </form>
+          </div>
+          <div class="tabs__data_item" id="tab_2">
+            <form class="search__content_form">
+              <input type="text" class="search__content_input" value="" placeholder="Введите марку">
+              <button type="button" class="search__content_btn">искать</button>
+            </form>
+          </div>
+          <div class="tabs__data_item" id="tab_3">
+            <form class="search__content_form">
+              <input type="text" class="search__content_input" value="" placeholder="Введите название">
+              <button type="button" class="search__content_btn">искать</button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </section>
