@@ -489,3 +489,72 @@ body {
     margin-left: 5px;
 }
 /*********************************** Categories section ***********************************/
+
+/*********************************** Popular products section ***********************************/
+.product__item {
+    border: 1px solid #CDCDCD;
+    border-radius: 3px;
+    transition: all .3s ease;
+    position: relative;
+    text-align: center;
+    padding: 52px 20px 30px;
+    color: #2F3035;
+}
+
+.product__item:hover {
+    box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+    border-color: transparent;
+}
+
+.product__item_wishlist {
+    position: absolute;
+    top: 16px;
+    right: 19px;
+    width: 24px;
+    height: 22px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.product__item_wishlist::before {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 22px;
+    background-image: url("../images/wishlist.svg");
+    top: 0;
+    left: 0;
+}
+
+.product__item_wishlist:hover::before {
+    background-image: url("../images/wishlist_hover.svg");
+}
+
+.product__item_wishlist.active::before {
+    background-image: url("../images/wishlist_active.svg");
+}
+
+.product__item_image {
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+.product__item_title {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 25px;
+}
+
+.product__item_price {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.product__item:hover .product__item_title, .product__item:hover .product__item_price {
+    color: #1C62CD;
+}
+/*********************************** Popular products section ***********************************/

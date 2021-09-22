@@ -24,4 +24,12 @@ $(function(){
         $(this).find('.tabs__panel_item').first().trigger('click');
     });
     // Tabs
+
+    // Wishlist button
+    $('.product__item_wishlist').on('click', function (e) {
+        e.preventDefault();
+
+        $(this).toggleClass('active');
+    });
+    // Wishlist button
 });
