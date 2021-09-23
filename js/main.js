@@ -32,4 +32,16 @@ $(function(){
         $(this).toggleClass('active');
     });
     // Wishlist button
+
+    // Add to cart button
+    $('.product__item_cart').on('click', function(e) {
+        e.preventDefault();
+    });
+    // Add to cart button
+
+    $('.products__slider').slick({
+        slidesToShow: 4,
+        prevArrow: '<button type="button" class="product__slider_btn btn__prev"><img src="images/btn_slider_left_black.svg" /></button>',
+        nextArrow: '<button type="button" class="product__slider_btn btn__next"><img src="images/btn_slider_right_black.svg" /></button>'
+    });
 });
